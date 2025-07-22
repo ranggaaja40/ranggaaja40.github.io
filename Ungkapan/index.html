@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ungkapan rangga</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    color: #333;
+    text-align: center;
+  }
+  .container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #cc0000;
+  }
+</style>
+</head>
+<body>
 
+<div class="container">
+  <h1>TERJADI KESALAHAN!</h1>
+  <p>Sistem Anda mungkin tidak aman. Silakan hubungi teknisi darurat sekarang!</p>
+  <p>Jangan panik...</p>
+</div>
+
+<script>
+  // Fungsi untuk menampilkan alert berulang
+  function showEndlessAlert() {
+    alert("GAGAL SISTEM! Kesalahan fatal terdeteksi. Silakan mulai ulang sistem Anda segera!");
+    // Panggil kembali fungsi setelah sedikit jeda
+    setTimeout(showEndlessAlert, 500); // Muncul setiap 0.5 detik
+  }
+
+  // Mulai menampilkan alert saat halaman dimuat
+  showEndlessAlert();
+</script>
+
+</body>
+</html>
